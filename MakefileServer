@@ -1,5 +1,6 @@
 servidor: servidor.cpp Respuesta.o SocketDatagrama.o PaqueteDatagrama1.o
 	g++ -Wall servidor.cpp Respuesta.o SocketDatagrama.o PaqueteDatagrama1.o -o servidor
+	rm *.o
 Respuesta.o: Respuesta.cpp Respuesta.h
 	g++ -Wall Respuesta.cpp -c
 SocketDatagrama.o: SocketDatagrama.cpp SocketDatagrama.h

@@ -20,7 +20,7 @@ struct mensaje* Respuesta::getRequest(){
     PaqueteDatagrama1 res(sizeof(mensaje));
     struct mensaje  dataRecv,*aux;
     
-    if(ServerSocket->SetDatagramTimeout(res,5,0) != -1 ){
+    if(ServerSocket->SetDatagramTimeout(res,10,0) != -1 ){
 
         memcpy(&dataRecv,res.getData(),sizeof(dataRecv) );
         port = res.getPort();

@@ -25,7 +25,7 @@ int main (int argc, char*argv[]){
             
         }
     }
-    cout<<"EXITO Cuenta local final del cliente y servidor iguañes "<<c<<endl;
+    cout<<"EXITO Cuenta local final del cliente y servidor iguales "<<c<<endl;
 
 }
 

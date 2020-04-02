@@ -67,7 +67,7 @@ int SocketDatagrama::SetDatagramTimeout(PaqueteDatagrama1 &p, time_t seg, suseco
             //cout<<"Tiempo de espera de respuesta excedido\n";
              return -1;
          }
-         
+         return -3; 
      }
   
 
